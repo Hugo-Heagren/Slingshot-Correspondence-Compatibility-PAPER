@@ -1,0 +1,135 @@
+% Preamble {{{1
+\documentclass[12pt]{article} 
+
+% Packages {{{2 
+\usepackage{setspace}
+\usepackage{ellipsis}
+\usepackage{import}
+\usepackage{amsthm}
+\usepackage{geometry}
+\usepackage{environ}
+\usepackage[soul]{lua-ul}
+% }}}2
+
+% Bibliography {{{2
+% Load BibLaTeX and specify all of its options. {{{3
+\usepackage[
+style=authoryear-ibid, % Boilerplate style which uses author-year style citations and bib-entries
+sorting=nyt,           % Sort the bibliography by name, then year, then title
+date=year,             % only use the year for the date in the bibliography
+url=false,             % (except for internet sources) don't include the url in the bibliography
+isbn=false,            % don't include the ISBN in the bibliography
+doi=false,             % don't include the ISBN in the bibliography
+autopunct=true,        % automatically scan ahead for punctuation which conflicts with the citation
+]{biblatex}
+% }}}3
+
+% Southampton style {{{3
+\renewcommand\newunitpunct{\addperiod\addspace} % Separate inidividual sections of each bibliogtrpahy entry with a comma and space. 
+\renewcommand\postnotedelim{\addcolon\addspace} % Separate the cited work and date from the page number cited with a colon followed by a space. 
+\DeclareFieldFormat{postnote}{#1} % Suppress the 'p. ' from appearing in the parencites (as is default) 
+
+% Defines which punctuation marks autopunct (In BibLaTeX) will look for when
+% scanning ahead for punctuaton after citations
+\DeclareAutoPunctuation{.,;:!?}
+% }}}3
+
+% Tell BibLaTeX where to find the bibliograph(y/ies)
+\addbibresource{~/University/bibliography.bib}
+% }}}2
+
+% Page layout, sizing and style {{{2
+\geometry{
+	a4paper, % paper size a4
+	margin=1in, % 1" margins all round
+}
+\linespread{2} % Makes lines double spaced (properly double spaced, not 'word' double spaced)
+\setlength{\parskip}{2em} % Makes the distance between paragraphs twice the heigth of a standard M
+
+% Set underlining dimensions (depth | thickness)
+% \setuldepth{0.17ex}
+
+% Theorem style (bold name, number and note, no punctuation) {{{3
+\newtheoremstyle{mytheoremstyle}% name of the style to be used
+  {}{}{}{}{}
+  { }% no punctuation between head and body
+  { }% normal interword space between head and body
+  {\thmname{\textbf{#1}}% Make theorem heading ('Theorem', 'Thesis' etc) bold
+   \thmnumber{ \textbf{#2}}% Make theorem number bold
+   \thmnote{ \textbf{#3}}% Make theorem note (an arbitrary index) bold
+   }
+\theoremstyle{mytheoremstyle} % Actually USE the above style 
+% }}}3
+% }}}2
+
+% Commands and environments {{{2
+% 'Example' environment {{{3
+% Use for continuously arabic numbered EXAMPLES
+\newtheorem{example}{}
+% }}}3
+
+% 'Thesis' environment {{{3
+% Use this for 'Thesis 1', 'Thesis 2', etc.
+\newtheorem{thesis}{Thesis}
+% }}}3
+
+% 'Principle' environment {{{3
+% Use when I want to arbitraritly number exemplified text, then \ref it in the
+% text with it's labe, displaying that arbitrary number.
+\newtheorem{innercustomgeneric}{\customgenericname}
+\providecommand{\customgenericname}{}
+\newcommand{\newcustomtheorem}[2]{%
+  \newenvironment{#1}[1]
+  {%
+   \renewcommand\customgenericname{#2}%
+   \renewcommand\theinnercustomgeneric{##1}%
+   \innercustomgeneric
+  }
+  {\endinnercustomgeneric}
+}
+\newcustomtheorem{principle}{}
+% }}}3
+
+% Revisions {{{3
+% '\rev' command (short, inline revisions){{{4
+\newcommand{\rev}[1]{\ul{#1}}
+% }}}4
+% 'Revisions' evironment (longer revisions) {{{4
+\NewEnviron{revision}{\expandafter\ul\expandafter{\BODY}}
+% }}}4
+% }}}3
+% }}}2
+
+% Header {{{2 
+\pagestyle{myheadings}
+\markright{ID: 29902991}
+% }}}2
+
+% Attributes {{{2
+\title{Is truth a relation between what is said or thought and how the world is?}
+\author{}
+\date{}
+% }}}2
+
+% }}}1
+
+\begin{document} 
+\maketitle 
+\thispagestyle{myheadings} % Force first page to have the same pagestyle as all the others (numbeirng and heading etc.), otherwise \maketitle resets it. 
+% Revisions (if it exsits) {{{1
+\IfFileExists{./revisions.tex}{
+	\textit{
+	\section*{Revisions}
+	\import{./}{revisions.tex}
+	}   % end italics
+	}{} % end if statement
+% }}}1
+
+% Main essay {{{1
+\section*{\phantom{Essay}}
+\import{./}{essay.tex}
+% }}}1
+\printbibliography[ % 
+title=Bibliography % force the Bibliography to be called 'Bibliography'
+] % 
+\end{document}
