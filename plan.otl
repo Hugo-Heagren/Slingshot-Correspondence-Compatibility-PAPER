@@ -3,9 +3,10 @@ IS TRUTH A RELATION BETWEEN WHAT IS SAID OR THOUGHT AND HOW THE WORLD IS? PLAN
 Intro
 	This essay defends the facts-based correspondence theory (as a sgenreal schem(e/a) against the 'slingshot' form / family of arguments. 
 	Specifically: the slingshot argument argues that if facts based correspondence teory is true, then all truthbearers are made true (???) by the same truthmaker, and that this contradicts the original motivations for the correspondence theory.
-	First I introduce and explain the correspondence theory as a schem(e/a) and the slingshot as a form of argument against it.
-		Mention some motivations for the slingshot, and variuos instnaces of it's use for different puroses (Davidson, and at least on enon-scorrespondence theorist etc.)
-	Then explain  how in fact the conclusion of the slingshot accords with our intuitions about truth (especially those which originally motivated the correspondence theory)
+	First I introduce and explain the correspondence theory as a schem(e/a) and the slingshot as a form of argument.
+	I explain how the slingshot is actually applied against the correspondence theory in different ways...
+		and mention some motivations for the slingshot, and variuos instnaces of it's use for different puroses (Davidson, and at least on enon-scorrespondence theorist etc.)
+	Then explain how in fact the conclusion of the slingshot accords with our intuitions about truth (especially those which originally motivated the correspondence theory)
 	(if I have space I could talk here about various possible objections)
 
 Terminology
@@ -22,3 +23,56 @@ The Correspondence Theory
 		the intuition that all truths are true in the same way
 			This is monism about truth
 			We intuitively think that although they might have differeneces (perhaps in meaning, construction, perhaps in which which truthmakers they correspond with) two different true sentences have something common in treir truth. (they are made true in the same way, or their truths share a nature, or something).
+
+-- I shouldn't need any citations up until this point
+
+The Slingshot Argument 
+	So called because it is meant to be a small, sinmple argument which brings down a great towering foe in corespondence theory.
+	A family schem(a/e) of arguments which all prove that: if the correspondence theory is true, then all true truthbearers refer to / are made true by the same truthmaker (and all false ones refer to the same thing / would be made true by the same false-makers) of the following form:
+	The ARGUMENT:
+		Assumptions:
+			sentences refer (assume - probably a fair assumption given compositionaly of meaning and the fact that jwe like to think most smentically significatn part of sentences refer)
+			logically equivalent singular terms / sentences have the same reference (assume)
+			the reference of a complex singular term will not chnge if a singular terms which is a part of it is replaced by a coreffering singular term (assume)
+				from the SEP entry 'If a sentence is converted into another sentence by substituting any term for a term with exactly the same designation, the resulting and the initial sentences also designate the same.'
+		let A and B be an two sentecnces with the same truth value
+		then, the following sentneces all have the same reference:
+		
+		A
+			: This will be true if A obtains and false otherwise
+		{x:x = x & A} = {x:x = x}
+			: This is best read as 'the-set-of-all-x-such-that-x-is-(identical-with)-x-and-A-obtains IS IDENTICAL WITH the-set-of-all-x-such-that-x-is-(identical-with)-x'.
+			: The set of all x such that x = x is just all objects, because for any object, that object is identical with itself.
+			: So, the set of all x such that x is equal to x AND A OBTAINS will just be empty when A obtains, and all objects otherwise.
+			: So, the truth value of the whole sentence rests on whether the set of all x such that x = x and A obtains is identical with the set of all objects (the set of all x such x = x).
+			: This will be true when A obtains and false otherwise. 
+			: Notice that this sentence will be true iff and only if A is true, and that this is the same condition as for A above
+			? hence, this sentnece can be substituted for A in any situation and preserve truth.
+			? Hence, this sentence is logically equivalen with A
+			? Hence, we infer that this sentence has the same reference as A
+		{x:x = x & B} = {x: x = x}
+			: This differs from the last sentence ONLY in containing the singular term '{x:x = x & B}
+			: For similar reasons to above, this will empty whenever B is false, and all objects otherwise
+			: We assumed that A and B have the same truth value, so the above whole sentence and this sentence must refer to the same thing, because we hav eonly substituted coreferential singular terms {x: x = x & A} for {x: x = x & B})
+			: So, this sentence refers to the same thing as the one above,
+			: which referred to the same thing as A.
+			: Hence, this sentence refers to the same thing as A
+		B
+			: By reversing the method we emplyed in the first step, we can see that B must refer to the same thing as the aboce whole sentence {x: x = x & B} = {x: x = x}
+			: Hence, this sentence (B) refers to the same as the above
+			: sentece, which refers to the same as A.
+			: So, B and A have the same reference.
+			: [note: of course we could derive that be has the same reference as the above manually, but it is quicker and I think more intuitive to see it this way, as 'reflecting' the first step]. 
+		Notes
+			this assumes that A and B have the same truth value, but doesn't specify what that is, so the argument can be run for A and B with any truth values (including perhaps other than true/ false, if we want to admit of many-valued logics)
+	There are many pobjections which can be made to this argument itself, but this paper is not concerned with them.
+	Of course, this in itself does not refute the correspondce theory.
+		the correspondence theory does not (always) explicitly say that all true sentences are NOT made true or refering to the same thing. 
+	A further premise is needed, which shows that this conclusion is incompatible with the correspondence theory.
+	Such a premise would have to be (or entail):
+		If the corespondene theory is true, then it is not the case that all true sentences refer to / are made ture by the same thing / truthmaker.
+			(the conclusion then follows as: all true sentences do in fact refer to / are in fact made true by the same thing / truthmaker, hence (by MT) the correspondence theory is not true)
+	I am arguing that the correspondence theoyr is actually compatible with the conclusions of th slinghot argument.
+	So put another way, I am arguijng that this premise is false.
+	Arguments of this form have been deployed for different purposes, and for these against different specific views of truthmakres and truthbearers.
+		Donald Davidson runs a version of this argument against facts-based correspondence theory to show that it is wrong, but uses this conclusion to motivate a non-facts based correspondence theory. (Davidson 1969 true to the facts)
