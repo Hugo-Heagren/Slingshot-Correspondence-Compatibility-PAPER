@@ -2,7 +2,7 @@ IS TRUTH A RELATION BETWEEN WHAT IS SAID OR THOUGHT AND HOW THE WORLD IS? PLAN
 
 Intro
 	This essay defends the facts-based correspondence theory (as a sgenreal schem(e/a) against the 'slingshot' form / family of arguments. 
-	Specifically: the slingshot argument argues that if facts based correspondence teory is true, then all truthbearers are made true (???) by the same truthmaker, and that this contradicts the original motivations for the correspondence theory.
+	Specifically: the slingshot argument (as deployed against correspondence theory) argues that if facts based correspondence teory is true, then all truthbearers are made true (???) by the same truthmaker, and that this contradicts the original motivations for the correspondence theory.
 	First I introduce and explain the correspondence theory as a schem(e/a) and the slingshot as a form of argument.
 	I explain how the slingshot is actually applied against the correspondence theory in different ways...
 		and mention some motivations for the slingshot, and variuos instnaces of it's use for different puroses (Davidson, and at least on enon-scorrespondence theorist etc.)
@@ -15,12 +15,12 @@ Terminology
 
 The Correspondence Theory
 	A family / scheme of theories.
-	which say that truthbearers are made true by the existence of 'corresponing' truthmakers, or by their relation of correspondence with those truthmakers.
+	which say that truthbearers are made true by the existence of 'corresponing' truthmakers, or by their correspondence with those truthmakers.
 	These truthmakers are genreally something 'in the world' (facts, states of affairs, the actual objects with which the truthbearing sentence or proposition is concerned etc.)
 	This is motivated by:
-		the intuitoin that (especialy contigent) true truthbearers are made true by something in the world (not (just / usually) by semantics, or by logic)
-		the intuition that every truth is made true by something
+		the intuitoin that (especialy contigent) true truthbearers are made true by something (in the world (not (just / usually) by semantics, or by logic))
 		the intuition that all truths are true in the same way
+			(often not explicitly mentioned, but the issue of plusralism / monism about truth IS a question, and a commitment to the correspondence theory alone includes a commitment out monism.
 			This is monism about truth
 			We intuitively think that although they might have differeneces (perhaps in meaning, construction, perhaps in which which truthmakers they correspond with) two different true sentences have something common in treir truth. (they are made true in the same way, or their truths share a nature, or something).
 
@@ -35,7 +35,7 @@ The Slingshot Argument
 			logically equivalent singular terms / sentences have the same reference (assume)
 			the reference of a complex singular term will not chnge if a singular terms which is a part of it is replaced by a coreffering singular term (assume)
 				from the SEP entry 'If a sentence is converted into another sentence by substituting any term for a term with exactly the same designation, the resulting and the initial sentences also designate the same.'
-		let A and B be an two sentecnces with the same truth value
+		let A and B be any two sentecnces with the same truth value
 		then, the following sentneces all have the same reference:
 		
 		A
@@ -62,17 +62,44 @@ The Slingshot Argument
 			: Hence, this sentence (B) refers to the same as the above
 			: sentece, which refers to the same as A.
 			: So, B and A have the same reference.
-			: [note: of course we could derive that be has the same reference as the above manually, but it is quicker and I think more intuitive to see it this way, as 'reflecting' the first step]. 
+			: [note: of course we could derive that be has the same reference as the above manually, but it is quicker and I think more intuitive to see it this way, as 'reflecting' the first step].  2020-05-20
 		Notes
+			These two facts / things (referred to by true an false sentences) are generally taken to be Truth and Falsehood / the True and the False
 			this assumes that A and B have the same truth value, but doesn't specify what that is, so the argument can be run for A and B with any truth values (including perhaps other than true/ false, if we want to admit of many-valued logics)
 	There are many pobjections which can be made to this argument itself, but this paper is not concerned with them.
 	Of course, this in itself does not refute the correspondce theory.
 		the correspondence theory does not (always) explicitly say that all true sentences are NOT made true or refering to the same thing. 
+		So strictly speaking, one could hang on to the correspondence theory and just accept the sll true sentences refer to the same thing.
+		If so, then the slingshot becomes only a razor: a way of knowing which specific versions / formaultions of the correspondence theory are right
 	A further premise is needed, which shows that this conclusion is incompatible with the correspondence theory.
 	Such a premise would have to be (or entail):
 		If the corespondene theory is true, then it is not the case that all true sentences refer to / are made ture by the same thing / truthmaker.
 			(the conclusion then follows as: all true sentences do in fact refer to / are in fact made true by the same thing / truthmaker, hence (by MT) the correspondence theory is not true)
-	I am arguing that the correspondence theoyr is actually compatible with the conclusions of th slinghot argument.
 	So put another way, I am arguijng that this premise is false.
 	Arguments of this form have been deployed for different purposes, and for these against different specific views of truthmakres and truthbearers.
 		Donald Davidson runs a version of this argument against facts-based correspondence theory to show that it is wrong, but uses this conclusion to motivate a non-facts based correspondence theory. (Davidson 1969 true to the facts)
+
+--
+	: Th slingshot argument assumes that sentences refer (not an obvious assumption)
+	: If sentences do refer, then it is actually quite intuitive that they refer to truth values, or states of affairs.
+	: Obviously, sentences do not (as wholes) refer to individual things or objects. (we have names and descriptions for this. In weak sense or in talking we might say that 'the sentence refers to him',, but only in the same way we would say 'he refers to her'. It means someting different). 
+	: What else would sentences refer to? 
+	: It is tempting to assume they refer to some sort of correlated propositoion 
+
+Critique
+	The need for this extra premise, separate form the correspondence theory itself and the core of the slingshot argument itself, show that the slingshot alone does not refute correspondence theory per se. the two are compatible. (if one os willing to accept a correspondence with the same Great Fact)
+		The above premise is true iff there is some premise / consequecne / part of the correspondence theory which says or entails that different true sentences refer to different things.
+		Two possibilities: (the one might be a specific way of articulating the other?)
+			This would be the intuition that all sentences should refer to different facts, because different sentences mean different things. The worry with the conclusion of the slingshot seems to be that it leads to any two true sentences meaning the same thing.
+				But this is true only if meaning is identical with reference! Which is unlikely.
+			different sentences are concerned with different subject matter, (are about different things) and this conclusion would mean that they are all about the same things.
+				Only if 'what a sentence is about' is identical with what the sentence as a whole refers to. 
+				But this is probably not true. (sentences are not just 'about' the same thing that they refer to / sentences' content is not necessarilly identical to their reference)
+					E.g the expression 'the colour of snow'. This is a singular expression, it refers to something. It has parts ('snow', 'colour') which refer to various things (snow and colour respectively), so it could be said to be 'about' them, but it does not as a whole refer to them: it refers to one thing: WHITE(NESS).  (it even has some parts ('of snow', 'the') which we probably want to say don't refer at all!
+					This example is meant to show that the reference of a whoe singly-referring expression, though it might be determined by it's component parts and their composition, does not have to be in any way 'the same'. it can be drastically different. 
+				Given this, it is possible that sentences are 'about' various different things, but all true sentences each refer to the same things. 
+				this is just one way of saying that a sentences' (or other expression's) meaning is not just identifiable with it's singular reference.
+				While open to questin, this seems quite likely!
+		Why this works (MONISM)
+			Seen in this way, the conclusion is actually in accord with the correspondence theorist's intuition that truth is monistic: what it is for a truthbearer to be true is for it refer to the truthmaker.
+			In this, all true truthbearers are alike, but they need not be in any other respect.
