@@ -26,7 +26,7 @@ The argument assumes:
 	\end{thesis}
 
 	
-	\begin{thesis} \label{}
+	\begin{thesis} \label{constref}
 	The reference of a complex singular term (e.g. a sentence) will be unchanged if a singular term whch is a part of it is replaced with another singular term with the same reference.
 	\end{thesis}
 	
@@ -42,7 +42,8 @@ ${x:x = x & A}$ if the set of all things which are identical with themselves, an
 All things are identical with themselves, so this will just be the set of all things if $A$ is true, and the emtpy set otherwise. 
 ${x:x = x}$ is the set of all things which are identical with themselves.
 The whole sentence just asserts the identity of these two sets, so it will be true if ${x:x = x & A}$ is the set of all things.
-Hence, \ref{setA} is true just if $A$ is true.
+Hence, \ref{setA} is true just if $A$ is true (the two are logically equivalent (\ref{sameref}).
+since \ref{setA} is logically equivalent with $A$, the two must have the same reference. (\ref{sameref})
 
 The sentence 
 
@@ -53,7 +54,7 @@ The sentence
 will be true just if $B$ is true, for similar reasons to \ref{setA}.
 The sentence ${x:x = x & B}$ can be constructed from it's counterpart in \ref{setA}, only by substituting $B$ for $A$.
 Since $B$ and $A$ have the same truth value, and the reference of the sentence depends only the truth value of the sentence $A$ or $B$ in it, the sentence'es reference must be the same as 	${x:x = x & A}$.
-Hence, \ref{setB} is constructed from \ref{setA} by substituting a singular term with the same refernce, so \ref{setB} must have the same reference as \ref{setA} (which had the same reference as $A$).
+Hence, \ref{setB} is constructed from \ref{setA} by substituting a singular term with the same refernce, so \ref{setB} must have the same reference as \ref{setA} (which had the same reference as $A$). (\ref{constref})
 
 By revresing the first step (which showed that \ref{setA} has the same reference as $A$), \ref{setB} must have the same reference as $B$.
 
