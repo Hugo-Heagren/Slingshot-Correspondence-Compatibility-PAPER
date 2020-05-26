@@ -19,7 +19,7 @@ The version of the slingshot presented here is Davidsons.
 Davidson assumes that facts are sentence's truthmakers, but the argument can be constructed with any candidate truthmaker (e.g. (true) propositions, (actual) states of affairs etc.)
 \parencite[752]{Davidson_1969} 
 
-% Daidson argument actually works slightly differently (but reaches similar conclusions). Make sure this is right!
+% Davidson argument actually works slightly differently (but reaches similar conclusions). Make sure this is right!
 
 The argument assumes:
 
@@ -45,45 +45,54 @@ The following sentence must refer to whatever $P$ refers to, and will be true if
 	\end{example}
 
 All things are identical with themselves, so the `set of all objects which are identical with themselves and (for which) $P$ obtains' will just be the set of all things if $P$ is true, and the emtpy set otherwise.
-Since the whole sentence sentence just asserts that this is in fact identical with the set of all objects, \ref{setP} is true just if the first set is the set of all objects.
+Since the whole sentence just asserts that this set is identical with the set of all objects, \ref{setP} is true just if the first set is the set of all objects.
 Hence, \ref{setP} is true just if $P$ is true---so the two are logically equivalent.
 Since \ref{setP} is logically equivalent with $P$, the two must have the same reference. 
 (\ref{sameref})
 
-For similar reasons, the following sentence will be true just if $Q$ is true:
+Hence, `$P$' can be substituted in for \ref{setP}. (\ref{constref})
+
+The correspondence theory entails the following sentence:
+
+	\begin{example} \label{stateP}
+	the statement that $P$ correspnds with the fact that $P$.
+	\end{example}
+
+From this, and the fact that $P$ can be substituted for \ref{constref}, \ref{factP} can be derived:
+
+	\begin{example} \label{factP}
+	the statement that $P$ correspnds with the fact that the set of all objects which are identical with themselves and (for which) $P$ obtains is identical with the set of all objects which are identical with themselves.
+	\end{example}
+
+For similar reasons to above, the following sentence will be logically equivalent with $Q$:
 
 	\begin{example} \label{setQ}
 	The set of all objects which are identical with themselves and (for which) $Q$ obtains is identical with the set of all objects which are identical with themselves.
 	\end{example}
 
 The expression `the set of all objects which are identical with themselves and (for which) $Q$ obtains' can be constructed from it's counterpart in \ref{setP}, only by substituting $Q$ for $P$.
-Since $Q$ and $P$ have the same truth value, and the reference of the expression depends only the truth value of the sentence $P$ or $Q$ in it, the sentencee's reference must be the same as it's counterpart in \ref{setP}.
+Since $Q$ and $P$ have the same truth value, and the reference of the expression depends only on the truth value of the sentence $P$ or $Q$ in it, the sentence's reference must be the same as it's counterpart in \ref{setP}.
 Hence, \ref{setQ} is constructed from \ref{setP} by substituting a singular term with the same reference, so \ref{setQ} must have the same reference as \ref{setP}. 
 (\ref{constref})
+Hence, \ref{setQ} is logically equivalent with \ref{setP}, so the two can substituted in \ref{factP} to produce \ref{factQ}.
+% this ^ needs a bit of LOGIC and FACTS
 
-By reversing the first step (which showed that \ref{setP} has the same reference as $P$), \ref{setQ} must have the same reference as $Q$.
 
-So, $Q$ refers to the same thing as \ref{setQ}, which refers to the same thing as \ref{setP}, which refers to the same thing $P$.
-Since the argument runs for any two sentences with the same truth value, all sentences with the same truth value must refer to the same thing.
-
-Given that both sentences refer to the same thing, using \ref{constref}, we can infer from the sentence
-
-	\begin{example} \label{stateP}
-	the statement that $P$ correspnds with the fact that $P$
+	\begin{example} \label{factQ}
+	the statement that $P$ correspnds with the fact that the set of all objects which are identical with themselves and (for which) $Q$ obtains is identical with the set of all objects which are identical with themselves.
 	\end{example}
 
-to the sentence:
+BY reversing the step from \ref{stateP} to \ref{factP}, we can derive \ref{statePQ}:
 
-	\begin{example} \label{stateQ}
-	the statement that $P$ correspnds with the fact that $Q$
+	\begin{example} \label{statePQ}
+	the statement that $P$ correspnds with the fact that $Q$.
 	\end{example}
 
-because the final $P$ in the first sentence must have the same reference as $Q$.
 Since this will work for any two senteces with the same truth value, all true sentences must be made true by the same truthmaker.
 
 Davidson calls this truthmaker the `Great Fact'.
-(REFER HERE!)
-Others have identified it with truth (or for Frege the object `the True'(REFER HERE)) or with a general state of affairs of the universe (further REFER HERE from the Stainton paper).
+\parencite[753]{Davidson_1969} 
+Others have identified it with truth (or for Frege the object `the True'\parencite[216]{Frege_1948}) or with a general state of affairs of the universe (further REFER HERE from the Stainton paper).
 
 Many objections can be made to this argument in itself, but this essay is not concerned with them.
 
@@ -106,7 +115,7 @@ But clearly not all true sentences state identical things.
 Davidson takes this as a reduction to absurdity of (facts-based) correspndence theory. % someone in some paper had something about Davidson using the SA as RAA. Maybe quote them if I hae space?
 \parencite[750]{Davidson_1969}
 
-However, the above intuition, and Davidson's articuat of it are false.
+However, the above intuition, and Davidson's articulation of it are false.
 Just because two sentences have the same truthmaker, they need not mean the same (as in the intuitive version), state identical things (as in Davidsons) or hae anything else `important' in common (more generally).
 For example, if I have just eaten a apple and it has been my only one this week, then the following two sentences have the same truth maker:
 
