@@ -42,9 +42,7 @@ The argument assumes:
 	The reference of a complex singular term (e.g. a sentence) will be unchanged if a singular term whch is a part of it is replaced with another singular term with the same reference.
 	\end{thesis}
 	
-% N.B. the argument does NOT assume that the correspndence relation is reference. It just assumes that sentences refer, and then uses this later.
 % Might want to put the expanations before the results, and try to shorten the whole thing.
-
 $A$ and $B$ are any two sentences with the same truth value. 
 The following sentence must refer to whatever $A$ refers to, and will be true if and only if $A$ is true.
 
@@ -54,20 +52,19 @@ The following sentence must refer to whatever $A$ refers to, and will be true if
 
 All things are identical with themselves, so the `set of all objects which are identical with themselves and (for which) $A$ obtains' will just be the set of all things if $A$ is true, and the emtpy set otherwise.
 Since the whole sentence sentence just asserts that this is in fact identical with the set of all objects, \ref{setA} is true just if the first set is the set of all objects.
-Hence, \ref{setA} is true just if $A$ is true---so the two are logically equivalent (\ref{sameref}).
+Hence, \ref{setA} is true just if $A$ is true---so the two are logically equivalent.
 Since \ref{setA} is logically equivalent with $A$, the two must have the same reference. 
 (\ref{sameref})
 
-The sentence 
+For similar reasons, the following sentence will be true just if $B$ is true:
 
 	\begin{example} \label{setB}
 	The set of all objects which are identical with themselves and (for which) $B$ obtains is identical with the set of all objects which are identical with themselves.
 	\end{example}
 
-will be true just if $B$ is true, for similar reasons to \ref{setA}.
 The expression `the set of all objects which are identical with themselves and (for which) $B$ obtains' can be constructed from it's counterpart in \ref{setA}, only by substituting $B$ for $A$.
 Since $B$ and $A$ have the same truth value, and the reference of the expression depends only the truth value of the sentence $A$ or $B$ in it, the sentencee's reference must be the same as it's counterpart in \ref{setA}.
-Hence, \ref{setB} is constructed from \ref{setA} by substituting a singular term with the same reference, so \ref{setB} must have the same reference as \ref{setA} (which had the same reference as $A$). 
+Hence, \ref{setB} is constructed from \ref{setA} by substituting a singular term with the same reference, so \ref{setB} must have the same reference as \ref{setA}. 
 (\ref{constref})
 
 By reversing the first step (which showed that \ref{setA} has the same reference as $A$), \ref{setB} must have the same reference as $B$.
@@ -75,7 +72,7 @@ By reversing the first step (which showed that \ref{setA} has the same reference
 So, $B$ refers to the same thing as \ref{setB}, which refers to the same thing as \ref{setA}, which refers to the same thing $A$.
 Since the argument runs for any two sentences with the same truth value, all sentences with the same truth value must refer to the same thing.
 
-Using \ref{constref}, we can infer from the sentence
+Given that both sentences refer to the same thing, using \ref{constref}, we can infer from the sentence
 
 	\begin{example} \label{stateA}
 	the statement that A correspnds with the fact that A
@@ -87,8 +84,12 @@ to the sentence:
 	the statement that A correspnds with the fact that B
 	\end{example}
 
+% Use a footnote to describe that:
+% - Davidson uses facts, but tis applies to all truthmakers (I only use facts for the sake of 
+% I have used A and BE rather than Davidson's letters?
+
 because the final $A$ in the first sentence must have the same reference as $B$.
-Since this will work for any two senteces with the same truth value, all true sentences must be made trueh by the same truthmaker.
+Since this will work for any two senteces with the same truth value, all true sentences must be made true by the same truthmaker.
 
 Davidson calls this truthmaker the `Great Fact'.
 (REFER HERE!)
@@ -99,31 +100,6 @@ Many objections can be made to this argument in itself, but this essay is not co
 This conclusion in itself is not incompatible with the correspondence theory.
 The correspondence theory does not say that all true sentences do \emph{not} coorespond to the same truthmaker.
 A further premise is needed: that the correspondence theory is in some way incompatible with the conclusions of the slingshot argument:
-
-% Say something more like: this conclusion has been used against facts-based by introducing a further premise. 
-% ...and this premise is false.
-% Davidson Frege etc. {{{
-% Davidson says 'there are very strong reasons, as Frege pointed out, for
-% supposing that if sentences, when standing alone or in truth-functional con-
-% texts, name anything, then all true sentences name the same thing. THIS WOULD
-% FORCE US TO CONCLUDE THAT THE STATEMENT THAT P IS IDENTICAL WITH THE
-% STATEMENT THAT Q WHENEVER P AND Q ~ARE~BOTH~TRUE~ [HAVE THE SAME TRUTH VALUE]
-% presumably an unacceptable result'
-
-% WOULD IT? Only if we assume that any two statements referring to the same thing are completely identical.
-
-% But there are string reasons to doubt this:
-% - Exactly what the identity conditions for a sentence might be is unclear. 
-%   - Different identity conditions would have different consequene for the theory (I might not need this in here)
-%   - If 'same wording' then different context or curcumstacnes could change the meaning
-%   - if 'same meaning', then the identity conditions will ride on what meaning is, and it seems clear that meaning is not just reference, so even if two sentences do corefer, they might not comean.
-% - It is unlikely that two sentences (or any expressions in general) which refer to the same thing MUST mean the same thing, because there appears to be more to meaning than just reference. (Frtege himself thought there was a further component of meanign called, sense, but there are other ways to account for meaning not JUST being reference)
-%   - Examples: hesperus / phosphorus ; the colour of water (has no referent, water has no colour), but still has a meaning
-
-% In fact, Frege himself did accept similar conclusions to the slingshot (REFER) (as Davidson notes REFER) but did not see them as a problem. Since meaning in Frege's theory is more than just reference, sentences referring to their truth values is in fact just part of Frege's theory of truth: what it is for a sentence to be true is to refer to the The True.
-
-%}}}
-
 
 	\begin{thesis} \label{incompatible}
 	(If the correspondence theory is true,) then not all true truthbearers are made true by the same truthmaker.
@@ -137,9 +113,8 @@ Similar absurdities could be derived with other differences that sentences have,
 
 Davidson expresses a similar sentiment: that if two sentences correspond to the same thing then the statement of each is `identical' with that of the other.
 But clearly not all true sentences state identical things.
-(Davidson 750)
-Davidson takes this as a reduction to absurdity of (facts-based) correspndence theory.  % someone in some paper had something about Davidson using the SA as RAA. Maybe quote them if I hae space?
-% Might nbeed a different cite for Davidson here , about his acuytally disproving he theory.
+Davidson takes this as a reduction to absurdity of (facts-based) correspndence theory. % someone in some paper had something about Davidson using the SA as RAA. Maybe quote them if I hae space?
+\parencite[750]{Davidson_1969}
 
 % \begin{quotation}
 % there are very strong reasons \ldots\ for supposing that if sentences \ldots\ name anything, then all true sentences name the same thing.
