@@ -70,8 +70,9 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 % }}}3
 
 % 'Thesis' environment {{{3
-% Use this for 'Thesis 1', 'Thesis 2', etc.
-\newtheorem{thesis}{Thesis}
+% Use this for 'Thesis I', 'Thesis II', etc.
+\newtheorem{thesis}{}
+\renewcommand\thethesis{\Roman{thesis}} 
 % }}}3
 
 % 'Principle' environment {{{3
