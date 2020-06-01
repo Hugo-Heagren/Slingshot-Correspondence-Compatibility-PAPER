@@ -1,14 +1,14 @@
 % Preamble {{{1
-\documentclass[12pt]{article} 
+\documentclass[12pt]{article}
 
-% Packages {{{2 
+% Packages {{{2
 \usepackage{setspace}
 \usepackage{ellipsis}
 \usepackage{import}
 \usepackage{amsthm}
 \usepackage{geometry}
 \usepackage{environ}
-\usepackage[soul]{lua-ul}
+\usepackage{lua-ul}
 % }}}2
 
 % Bibliography {{{2
@@ -25,9 +25,9 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 % }}}3
 
 % Southampton style {{{3
-\renewcommand\newunitpunct{\addperiod\addspace} % Separate inidividual sections of each bibliogtrpahy entry with a comma and space. 
-\renewcommand\postnotedelim{\addcolon\addspace} % Separate the cited work and date from the page number cited with a colon followed by a space. 
-\DeclareFieldFormat{postnote}{#1} % Suppress the 'p. ' from appearing in the parencites (as is default) 
+\renewcommand\newunitpunct{\addperiod\addspace} % Separate inidividual sections of each bibliogtrpahy entry with a comma and space.
+\renewcommand\postnotedelim{\addcolon\addspace} % Separate the cited work and date from the page number cited with a colon followed by a space.
+\DeclareFieldFormat{postnote}{#1}               % Suppress the 'p. ' from appearing in the parencites (as is default)
 
 % Defines which punctuation marks autopunct (In BibLaTeX) will look for when
 % scanning ahead for punctuaton after citations
@@ -59,7 +59,7 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
    \thmnumber{ \textbf{#2}}% Make theorem number bold
    \thmnote{ \textbf{#3}}% Make theorem note (an arbitrary index) bold
    }
-\theoremstyle{mytheoremstyle} % Actually USE the above style 
+\theoremstyle{mytheoremstyle} % Actually USE the above style
 % }}}3
 % }}}2
 
@@ -72,7 +72,7 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 % 'Thesis' environment {{{3
 % Use this for 'Thesis I', 'Thesis II', etc.
 \newtheorem{thesis}{}
-\renewcommand\thethesis{\Roman{thesis}} 
+\renewcommand\thethesis{\Roman{thesis}}
 % }}}3
 
 % 'Principle' environment {{{3
@@ -94,15 +94,16 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 
 % Revisions {{{3
 % '\rev' command (short, inline revisions){{{4
-\newcommand{\rev}[1]{\ul{#1}}
+\newcommand{\rev}[1]{\underLine{#1}}
 % }}}4
+
 % 'Revisions' evironment (longer revisions) {{{4
-\NewEnviron{revision}{\expandafter\ul\expandafter{\BODY}}
+\NewEnviron{revision}{\expandafter\underLine\expandafter{\BODY}}
 % }}}4
 % }}}3
 % }}}2
 
-% Header {{{2 
+% Header {{{2
 \pagestyle{myheadings}
 \markright{ID: 29902991}
 % }}}2
@@ -115,9 +116,9 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 
 % }}}1
 
-\begin{document} 
-\maketitle 
-\thispagestyle{myheadings} % Force first page to have the same pagestyle as all the others (numbeirng and heading etc.), otherwise \maketitle resets it. 
+\begin{document}
+\maketitle
+\thispagestyle{myheadings} % Force first page to have the same pagestyle as all the others (numbeirng and heading etc.), otherwise \maketitle resets it.
 % Revisions (if it exsits) {{{1
 \IfFileExists{./revisions.tex}{
 	\textit{
@@ -131,7 +132,7 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 \section*{\phantom{Essay}}
 \import{./}{essay.tex}
 % }}}1
-\printbibliography[ % 
+\printbibliography[ %
 title=Bibliography % force the Bibliography to be called 'Bibliography'
-] % 
+] %
 \end{document}
