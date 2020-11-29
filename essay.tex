@@ -1,46 +1,49 @@
 The `slingshot' is a form of argument which shows that all true sentences have the same reference.
-This conclusion has been used argue against fact-based and similar correspondence theories of truth, to motivate either non-facts based correspondence theories, or rejecting correspondence.
+This conclusion has been used argue against fact-based and similar correspondence theories of truth, to motivate either non-facts based correspondence theories, or rejecting correspondence entirely.
 
-Against this, I argue the conclusion of the slingshot argument is compatible with facts-based and similar correspondence theories of truth.
-I show that the intuitions leading to correspondence theories accord with the slingshot's conclusions.
-I use Davidson's `Great Fact' argument as an example throughout, but draw conclusions concerning the slingshot in general.
+Against this I argue that the conclusion of the slingshot argument is compatible with facts-based and similar correspondence theories of truth.
+I show that the intuitions leading to correspondence theories accord with the slingshot's conclusions, using Davidson's `Great Fact' argument as an example throughout but drawing conclusions concerning the slingshot in general.
 
-Since the slingshot is meant to challenge correspondence theory significantly, this essay is meant to defend it significantly.
-That is, to defend a view that truth is a relation between what is said or thought and how the world is.
+Since the slingshot is meant to challenge correspondence theory significantly, this paper is meant to defend it significantly.
 
-I will use the term `truthbearer' for a thing which is true or false (sentences, propositions, beliefs etc.)
-A `truthmaker' makes a truthbearer true or false (facts, states of affairs etc.).
-This terminology is meant to be neutral on what truthmakers or truthbearers actually are, because I am defending correspondence theory from the slingshot in general, regardless any particular formulation of either.
+I use the term \textit{truthbearer} for a thing which is true or false (often thought to be sentences, propositions, beliefs etc.)
+A \textit{truthmaker} makes a truthbearer true or false (often thought facts, states of affairs etc.).
+% ...correspondence theory 'in general' perhaps? (might make the point feel clearer?)
+This terminology is meant to be neutral on what truthmakers or truthbearers actually are, because I am defending correspondence theory in general from the slingshot in general, regardless any particular formulation of either.
 % LW Nice. It can be useful to abstract away from details in this way
 
-The correspondence theory is a group of theories, sharing the view that truth is a relation (`correspondence') with a truthmaker in the real world (a fact, a state of affairs etc.).
-This is motivated intuitively: truth seems to be about what \emph{is the case} in the world, and true truthbearers seem to be `made true' somehow (e.g. by corresponding with a fact).
-This also agrees with the intuition that truth has a single nature (is `monism' about truth)---here of correspondence with a truthmaker.
+Correspondence theory is a group of theories sharing the view that truth is a relation (`correspondence') with a truthmaker in the real world (a fact, a state of affairs etc.).
+% Seriously?! 'motivated by intuition'?
+This is motivated intuitively: truth seems to be about what \emph{is the case} in the world, and true truthbearers seem to be `made true' somehow (e.g.\ by corresponding with a fact).
 
-The slingshot is a form of argument showing that all sentences with the same truth value have the same reference.
+This also agrees with the monistic intuition that truth has a single nature---here that of correspondence with a truthmaker.
+
+The slingshot is a form of argument showing that all sentences with the same truth value have the same reference. % same REFERENCE or same REFERENT?
+% I need to choose and consistently stick to 'correspondence WITH' OR 'correspondence TO'
 It can be extended to show that if correspondence theory is true, then all sentences with the same truth value must correspond to the same truthmaker.
 The version of the slingshot presented here is Davidson's.
 \parencite[753]{Davidson_1969}
 Davidson assumes facts are sentences' truthmakers, but the argument can be constructed with any truthmaker (propositions, states of affairs etc.)
-\footnote{
-It might seem that if sentences have truthmakers, then they must be truthbearers---this would be a significant assumption.
-Although sentences can be true or false, they might not be `primary' or basic truthbearers.
-Instead sentences are often thought to be `secondary' truthbearers, true or false in virtue of some `primary' truthbearer they are related to (e.g. a proposition or thought they express).
-}
 \parencite[752]{Davidson_1969}
+
+It might seem that if sentences have truthmakers, then they must be truthbearers---this would be a significant assumption.
+Sentences are often said to be true or false, but might only be secondarily so, in virtue of some more primary truthmaker which they express.
+This is a common view, where the primary truthbearers are propositions.
+% Instead sentences are often thought to be `secondary' truthbearers, true or false in virtue of some `primary' truthbearer they are related to (e.g. a proposition or thought they express).
 
 The argument assumes:
 \parencite[753]{Davidson_1969}
 
-	\begin{principle}{Reference} \label{srefer}
+	\begin{principle}{Reference}\label{srefer}
 	Sentences refer (like names or definite descriptions do).
 	\end{principle}
 
-	\begin{principle}{Equivalence} \label{sameref}
+	\begin{principle}{Equivalence}\label{sameref}
 	Logically equivalent singular terms (including sentences) refer to the same thing.
 	\end{principle}
 
-	\begin{principle}{Substitutivity} \label{constref}
+	\begin{principle}{Substitutivity}\label{constref}
+	% this could maybe be made more clear?
 	What a complex singular term refers to will not change if a part of it which is a singular term is substituted with another singular term with the same reference.
 	\end{principle}
 
@@ -54,8 +57,8 @@ This sentence must refer to whatever $P$ refers to, and will be true iff $P$ is 
 	\end{example}
 
 All things are identical with themselves, so the `set of all objects which are identical with themselves and (for which) $P$ obtains' will just be the set of all things if $P$ is true, and the empty set otherwise.
-The whole sentence says that this set is identical with the set of all objects, so \ref{setP} is true iff the first set is the set of all objects.
-So \ref{setP} is true iff $P$ is true---they are logically equivalent.
+The whole sentence says that this set is identical with the set of all objects, so~\ref{setP} is true iff the first set is the set of all objects.
+So \ref{setP} is true iff $P$ is true so they are logically equivalent.
 Since \ref{setP} is logically equivalent with $P$, they must have the same reference.
 (\ref{sameref})
 Hence, `$P$' can be substituted for \ref{setP}.
@@ -81,11 +84,14 @@ Next, for similar reasons to above $Q$ is logically equivalent with:
 	\end{example}
 
 The expression `the set of all objects which are identical with themselves and (for which) $Q$ obtains' can be constructed from it's counterpart in \ref{setP}, only by substituting $Q$ for $P$.
-The reference of the expression depends only on the truth value of the sentence $P$ or $Q$ in it.
-Since $Q$ and $P$ have the same truth value, the sentence's reference must be the same as it's counterpart's in \ref{setP}.
-Hence, \ref{setQ} is constructed from \ref{setP} by substituting a singular term with the same reference, so \ref{setQ} must have the same reference as \ref{setP}.
-Hence, \ref{setQ} is logically equivalent with \ref{setP}, so the two are substitutable in \ref{factP} to produce \ref{factQ}:
-(\ref{constref})
+The reference of that expression depends only on the truth value of the sentence $P$ or $Q$ in it (it will be all objects if $P$ or $Q$ is true, and no objects / the empty set if $P$ or $Q$ is false).
+Since $Q$ and $P$ have the same truth value, the expression with `$Q$' must have the same refer as it's counterpart in \ref{setP} (`the set of all objects which are identical with themselves and (for which) $P$ obtains').
+
+This expression is the only difference between \ref{setP} and \ref{setQ}.
+Hence, \ref{setQ} is constructed from \ref{setP} by substituting a singular term with the same reference, so \ref{setQ} must have the same reference as \ref{setP}. (\ref{constref})
+Since they have the same reference, \ref{setP} and \ref{setQ} can be substituted in \ref{factP} to produce \ref{factQ}:
+% Hence, \ref{setQ} is logically equivalent with \ref{setP}, so the two are substitutable in \ref{factP} to produce \ref{factQ}:
+
 % LW how does this follow?
 % LW you can appeal to substitutivity without saying 1 and 4 are logically equivalent
 
@@ -102,30 +108,35 @@ Finally, by reversing the initial step from \ref{stateP} to \ref{factP}, we deri
 
 Since this will work for any two sentences with the same truth value, all true sentences must be made true by the same truthmaker. (which Davidson calls the `Great Fact'.)
 \parencite[753]{Davidson_1969}
+% some more examples here would be good...!
 Others have identified it with truth \parencite[216]{Frege_1948} or with the actual state of affairs. 
 
-Many objections can be made to this argument in itself, but this essay is not concerned with them.
+% a list / overview paper (if one exists) would be handy here!
+Many objections can be made to this argument in itself, but this paper is not concerned with them.
 
 This conclusion is compatible with correspondence theory.
 The correspondence theory does not say that all true sentences do \emph{not} correspond to the same truthmaker (though this would be in the spirit of the motivating intuitions).
 A further premise is needed: that the correspondence theory is in some way incompatible with the conclusions of the slingshot argument:
 
-	\begin{principle}{Incompatibility} \label{incompatible}
-	Then not all true truthbearers are made true by the same truthmaker.
+	\begin{principle}{Incompatibility}\label{incompatible}
+	Not all true truthbearers are made true by the same truthmaker.
 	\end{principle}
 
 \ref{incompatible} is motivated by the intuition that true sentences which correspond with the same truthmaker are similar is some way (other than \emph{just} corresponding with the same truthmaker) that not all true sentences are.
-Put another way: intuitively, true sentences actually differ in some respect, but if all true sentences had the same truthmaker, then they would not so differ.
-For example, one might think different true sentences mean different things, but sentences with the same truthmaker always mean the same thing.
+% Put another way: we think intuitively that true sentences actually differ in some respect, but if all true sentences had the same truthmaker, then they would not so differ.
+Put another way: we think intuitively that some (perhaps most) true sentences actually differ in some respect, which sentences with the same truthmaker cannot differ in.
+For example one might think different true sentences mean different things, but sentences with the same truthmaker always mean the same thing.
 The conclusion of the slingshot argument then shows all true sentences mean the same thing, which is absurd!
-Similar absurdities could be derived with other differences that sentences have, but supposedly could not have if they had the same truthmaker.
+% make it more obvious here that I'm JUST giving an example. Maybe by splitting up the paragraphs or flogging the horse a bit more.
+Or if truthbearers were known to be structurally isomorphic or similar to their truthmakers and the structures of truthbearers varied, then they could not share a truthmaker.
+Similar absurdities could be derived with other differences that truthbearers have, but supposedly could not have if they had the same truthmaker.
 
 Davidson expresses a similar sentiment: if two sentences correspond to the same thing then the statement of each is `identical' with that of the other.
-But clearly not all true sentences state identical things.
+But not all true sentences state identical things.
 Davidson takes this as a reduction to absurdity of (facts-based) correspondence theory.
 \parencite[750]{Davidson_1969}
 
-However, the above intuition and Davidson's articulation of it, are false.
+However, the above intuition and Davidson's articulation of it are false.
 Just because two sentences have the same truthmaker, they need not mean the same (as in the intuitive version), state identical things (Davidson's version) or generally have anything else `important' in common.
 For example, if I have just eaten a apple and it has been my only one this week, then the following two sentences have the same truth maker:
 
@@ -137,20 +148,35 @@ For example, if I have just eaten a apple and it has been my only one this week,
 	I have eaten an apple this week.
 	\end{example}
 
-On the slingshot argument, then this truthmaker will the be Great Fact.
+% This is the part which needs the most work / expansion!
+On the slingshot argument this truthmaker will be the Great Fact.
 Alternatively it will be the fact (or proposition etc.) that I just ate a apple.
 Whatever it is, the truthmaker will be the same for the two sentences, but they mean different things and have different contents in other respects.
-They have different semantically significant parts (`yesterday', `this week') and different meanings (one could be true and the other false, if I had eaten an apple today, but not yesterday, so the two cannot mean the same).
+% They have different semantically significant parts (`yesterday', `this week') and different meanings (one could be true and the other false, if I had eaten an apple today, but not yesterday, so the two cannot mean the same).
+They have different semantically significant parts (`yesterday', `this week').
+They mean different things: one could be true and the other false if I had eaten an apple today but not yesterday, so the two cannot mean the same.
 % LW And so, although they correspond to the same fact, they need not have done. These modal considerations should make us suspicious of the slingshot - we know that definite descriptions cannot generally be substituted for one another in modal contexts.
 
-Generalising this, even if all true sentences have the same truthmaker, they may differ in other important respects: their semantically significant parts and their meanings.
-I do not think there is any respect in which sentences with the same truthmaker must be the same but in which sentences actually differ.
+Generalising this, even if all true sentences have the same truthmaker, they may differ in other important respects: their semantically significant parts, their meanings and other 
+
+I do not think there is any respect other than truth in which sentences with the same truthmaker must be the same but in which sentences actually differ. 
+If there were then sentences like \ref{yesterday} and \ref{week} would have to be similar in this regard, but I cannot find any such regard in which they must be so.
+They can mean different things, concern different subjects and objects, have sentential structure and content, and can have different pragmatics when uttered.
 Thus it is not a problem for correspondence theory that all true sentences have the same truthmaker.
 In fact Frege---whom Davidson follows in his argument \parencite[750]{Davidson_1969}---accepted a similar conclusion without seeing it as a problem.
+He thouht that all true sentences referred (as whole sentences) to The True, the analog of Davidson's Great Fact.
 \parencite[216]{Frege_1948}
 
-Of course, this means that all true sentences are true `together' in various ways: all true sentences will be true in the same way, in virtue of the same truthmaker etc.
+This should perhaps not be surprising.
+The expressed meaning of apparently identical sentences (the same words in the same order) can differ significantly because of their pragmatics.
+The final communication includes things determined by condsiderations beyond the apparent semantics. 
+Why should we be surprised if sentences which have identical truthmakers have significant differences in their meaning (or other semantically relevant qualities) determined by things beyond those truthmakers?
+
+Of course this means that all true sentences are true `together' in various ways: all true sentences will be true in the same way, in virtue of the same truthmaker etc.
 This is in accord with the monistic intuition which correspondence theory began with.
 True sentences might mean or express different things, but all true sentences share a common nature in their truth.
 So this consequence accords with our intuitions too.
 % LW But think about correspondence, how do all these truths correspond to the same fact? Not by being isomorphic with it, since they are not isomorphic with each other
+% 	probably / perhaps by some kind of mode-of-expression, or cognitive difference (like what Braun writes abt).
+% 	They all do in fact correspond to the same fact, but this doesn't stop us representing it in different ways: that I ate an apple today, and that my mother is female are both true.
+% 	Maybe. But how then would you deal with falsehood?
