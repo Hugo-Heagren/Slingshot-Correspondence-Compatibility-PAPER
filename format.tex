@@ -46,6 +46,7 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 \linespread{2} % Makes lines double spaced (properly double spaced, not 'word' double spaced)
 \setlength{\parskip}{2em} % Makes the distance between paragraphs twice the heigth of a standard M
 \setlength{\parindent}{0em}
+\pagenumbering{gobble}
 
 % Set underlining dimensions (depth | thickness)
 % \setuldepth{0.17ex}
@@ -103,10 +104,6 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 % }}}3
 % }}}2
 
-% Header {{{2
-\pagestyle{myheadings}
-\markright{ID: 29902991}
-% }}}2
 
 % Attributes {{{2
 \title{Is truth a relation between what is said or thought and how the world is?}
@@ -118,15 +115,6 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 
 \begin{document}
 \maketitle
-\thispagestyle{myheadings} % Force first page to have the same pagestyle as all the others (numbeirng and heading etc.), otherwise \maketitle resets it.
-% Revisions (if it exsits) {{{1
-\IfFileExists{./revisions.tex}{
-	\textit{
-	\section*{Revisions}
-	\import{./}{revisions.tex}
-	}   % end italics
-	}{} % end if statement
-% }}}1
 
 % Main essay {{{1
 \section*{\phantom{Essay}}
