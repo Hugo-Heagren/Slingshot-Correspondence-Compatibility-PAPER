@@ -8,7 +8,6 @@
 \usepackage{amsthm}
 \usepackage{geometry}
 \usepackage{environ}
-\usepackage{lua-ul}
 % }}}2
 
 % Bibliography {{{2
@@ -19,7 +18,7 @@ sorting=nyt,           % Sort the bibliography by name, then year, then title
 date=year,             % only use the year for the date in the bibliography
 url=false,             % (except for internet sources) don't include the url in the bibliography
 isbn=false,            % don't include the ISBN in the bibliography
-doi=false,             % don't include the ISBN in the bibliography
+doi=false,             % don't include the doi in the bibliography
 autopunct=true,        % automatically scan ahead for punctuation which conflicts with the citation
 ]{biblatex}
 % }}}3
@@ -36,20 +35,16 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 
 % Tell BibLaTeX where to find the bibliograph(y/ies)
 \addbibresource{~/.xapers/docs/*/bibtex}
+\addbibresource{~/.bibliography.bib}
 % }}}2
 
 % Page layout, sizing and style {{{2
 \geometry{
 	a4paper, % paper size a4
-	margin=1in, % 1" margins all round
 }
 \linespread{2} % Makes lines double spaced (properly double spaced, not 'word' double spaced)
 \setlength{\parskip}{2em} % Makes the distance between paragraphs twice the heigth of a standard M
 \setlength{\parindent}{0em}
-\pagenumbering{gobble}
-
-% Set underlining dimensions (depth | thickness)
-% \setuldepth{0.17ex}
 
 % Theorem style (bold name, number and note, no punctuation) {{{3
 \newtheoremstyle{mytheoremstyle}% name of the style to be used
@@ -70,12 +65,6 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 \newtheorem{example}{}
 % }}}3
 
-% 'Thesis' environment {{{3
-% Use this for 'Thesis I', 'Thesis II', etc.
-\newtheorem{thesis}{}
-\renewcommand\thethesis{\Roman{thesis}}
-% }}}3
-
 % 'Principle' environment {{{3
 % Use when I want to arbitraritly number exemplified text, then \ref it in the
 % text with it's labe, displaying that arbitrary number.
@@ -92,22 +81,11 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 }
 \newcustomtheorem{principle}{}
 % }}}3
-
-% Revisions {{{3
-% '\rev' command (short, inline revisions){{{4
-\newcommand{\rev}[1]{\underLine{#1}}
-% }}}4
-
-% 'Revisions' evironment (longer revisions) {{{4
-\NewEnviron{revision}{\expandafter\underLine\expandafter{\BODY}}
-% }}}4
-% }}}3
 % }}}2
 
-
 % Attributes {{{2
-\title{Is truth a relation between what is said or thought and how the world is?}
-\author{}
+\title{A General Defense of Correspondence Theories of Truth from the Slingshot Argument}
+\author{Hugo Heagren}
 \date{}
 % }}}2
 
@@ -115,12 +93,12 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 
 \begin{document}
 \maketitle
-
 % Main essay {{{1
 \section*{\phantom{Essay}}
 \import{./}{essay.tex}
 % }}}1
-\printbibliography[ %
+\pagebreak
+\printbibliography[%
 title=Bibliography % force the Bibliography to be called 'Bibliography'
 ] %
 \end{document}
