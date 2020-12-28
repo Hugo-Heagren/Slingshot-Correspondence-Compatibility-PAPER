@@ -1,13 +1,15 @@
 % Preamble {{{1
-\documentclass[12pt]{article}
+\documentclass[12pt]{article} 
 
-% Packages {{{2
+% Packages {{{2 
 \usepackage{setspace}
 \usepackage{ellipsis}
 \usepackage{import}
 \usepackage{amsthm}
 \usepackage{geometry}
 \usepackage{environ}
+\usepackage{lua-ul}
+\usepackage{scrextend}
 % }}}2
 
 % Bibliography {{{2
@@ -23,10 +25,12 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 ]{biblatex}
 % }}}3
 
-% Southampton style {{{3
+% Style {{{3
 \renewcommand\newunitpunct{\addperiod\addspace} % Separate inidividual sections of each bibliogtrpahy entry with a comma and space.
 \renewcommand\postnotedelim{\addcolon\addspace} % Separate the cited work and date from the page number cited with a colon followed by a space.
 \DeclareFieldFormat{postnote}{#1}               % Suppress the 'p. ' from appearing in the parencites (as is default)
+
+\setlength\bibitemsep{\baselineskip} % Separate entries by a line
 
 % Defines which punctuation marks autopunct (In BibLaTeX) will look for when
 % scanning ahead for punctuaton after citations
@@ -40,22 +44,23 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 
 % Page layout, sizing and style {{{2
 \geometry{
-	a4paper, % paper size a4
+	a4paper,    % paper size a4
+	margin=1in, % 1" margins all round
 }
 \linespread{2} % Makes lines double spaced (properly double spaced, not 'word' double spaced)
-\setlength{\parskip}{2em} % Makes the distance between paragraphs twice the heigth of a standard M
-\setlength{\parindent}{0em}
+\setlength{\parskip}{\baselineskip} % Makes the distance between paragraphs twice the heigth of a standard M
+\setlength{\parindent}{0in}       % Indent paragraphs by half an inch
 
 % Theorem style (bold name, number and note, no punctuation) {{{3
 \newtheoremstyle{mytheoremstyle}% name of the style to be used
   {}{}{}{}{}
-  { }% no punctuation between head and body
-  { }% normal interword space between head and body
-  {\thmname{\textbf{#1}}% Make theorem heading ('Theorem', 'Thesis' etc) bold
-   \thmnumber{ \textbf{#2}}% Make theorem number bold
-   \thmnote{ \textbf{#3}}% Make theorem note (an arbitrary index) bold
+  { }                       % no punctuation between head and body
+  { }                       % normal interword space between head and body
+  {\thmname{\textbf{#1}}    % Make theorem heading ('Theorem', 'Thesis' etc) bold
+   \thmnumber{ \textbf{#2}} % Make theorem number bold
+   \thmnote{ \textbf{#3}}   % Make theorem note (an arbitrary index) bold
    }
-\theoremstyle{mytheoremstyle} % Actually USE the above style
+\theoremstyle{mytheoremstyle} % Actually USE the above style 
 % }}}3
 % }}}2
 
@@ -91,14 +96,11 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 
 % }}}1
 
-\begin{document}
-\maketitle
-% Main essay {{{1
-\section*{\phantom{Essay}}
+\begin{document} 
+\maketitle 
+% Abstract
+% Main essay
+% \section*{\phantom{Essay}}
 \import{./}{essay.tex}
-% }}}1
-\pagebreak
-\printbibliography[%
-title=Bibliography % force the Bibliography to be called 'Bibliography'
-] %
+\printbibliography[]
 \end{document}
