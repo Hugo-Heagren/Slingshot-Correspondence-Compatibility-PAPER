@@ -88,12 +88,20 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 % 'parenref' command {{{3
 \newcommand\parenref[1]{(\ref{#1})}
 % }}}3
+
+% Word Count {{{3
+% command to count words in document
+\newcommand\wordcount{
+\immediate\write18{texcount -sum -total essay.tex > count.txt}
+\input{count.txt}words}
+% }}}3
+
 % }}}2
 
 % Attributes {{{2
 \title{A General Defense of Correspondence Theories of Truth from the Slingshot Argument}
 \author{Hugo Heagren}
-\date{}
+\date{\wordcount}
 % }}}2
 
 % }}}1
@@ -104,5 +112,7 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 % Main essay
 % \section*{\phantom{Essay}}
 \import{./}{essay.tex}
-\printbibliography[]
+\printbibliography[ % 
+title=Bibliography % force the Bibliography to be called 'Bibliography'
+] % 
 \end{document}
